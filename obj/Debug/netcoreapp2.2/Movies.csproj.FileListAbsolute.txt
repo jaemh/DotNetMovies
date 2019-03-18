@@ -1,0 +1,14 @@
+/Users/jaana/Desktop/Movies/bin/Debug/netcoreapp2.2/Movies.deps.json
+/Users/jaana/Desktop/Movies/bin/Debug/netcoreapp2.2/Movies.runtimeconfig.json
+/Users/jaana/Desktop/Movies/bin/Debug/netcoreapp2.2/Movies.runtimeconfig.dev.json
+/Users/jaana/Desktop/Movies/bin/Debug/netcoreapp2.2/Movies.dll
+/Users/jaana/Desktop/Movies/bin/Debug/netcoreapp2.2/Movies.pdb
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.csprojAssemblyReference.cache
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.csproj.CoreCompileInputs.cache
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.RazorAssemblyInfo.cache
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.RazorAssemblyInfo.cs
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.AssemblyInfoInputs.cache
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.AssemblyInfo.cs
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.RazorTargetAssemblyInfo.cache
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.dll
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.pdb
