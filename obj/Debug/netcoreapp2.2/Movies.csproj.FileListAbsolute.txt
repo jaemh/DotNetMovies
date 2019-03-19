@@ -12,3 +12,12 @@
 /Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.RazorTargetAssemblyInfo.cache
 /Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.dll
 /Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.pdb
+/Users/jaana/Desktop/Movies/bin/Debug/netcoreapp2.2/Movies.Views.dll
+/Users/jaana/Desktop/Movies/bin/Debug/netcoreapp2.2/Movies.Views.pdb
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.TagHelpers.input.cache
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.TagHelpers.output.cache
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.RazorCoreGenerate.cache
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.RazorTargetAssemblyInfo.cs
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.Views.pdb
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Movies.csproj.CopyComplete
+/Users/jaana/Desktop/Movies/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs

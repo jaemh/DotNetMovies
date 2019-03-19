@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Movies.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SpaServices.Webpack;
 
 namespace Movies
 {
@@ -21,6 +23,8 @@ namespace Movies
 
             //UseSqlServer is EntityFrameworkCore method
             services.AddDbContext<MoviesDbContext>(o => o.UseSqlServer(connectionString));
+
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -30,12 +34,21 @@ namespace Movies
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
+                var options = new WebpackDevMiddlewareOptions()
+                {
+                    HotModuleReplacement = true
+                };
+
+                app.UseWebpackDevMiddleware(options);
             }
 
             //serves assets from wwwroot folder
             app.UseStaticFiles();
             //Generate data if it doesen't already exist.
             moviesDbContext.CreateSeedData();
+
+            app.UseMvc();
 
             app.Run(async (context) =>
             {
