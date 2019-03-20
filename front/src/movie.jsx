@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Movie extends React {
+class Movie extends Component {
   render() {
     return (
       <div>

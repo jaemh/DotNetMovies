@@ -35,12 +35,6 @@ namespace Movies
             {
                 app.UseDeveloperExceptionPage();
 
-                var options = new WebpackDevMiddlewareOptions()
-                {
-                    HotModuleReplacement = true
-                };
-
-                app.UseWebpackDevMiddleware(options);
             }
 
             //serves assets from wwwroot folder

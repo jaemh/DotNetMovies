@@ -1,21 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import Movie from "./movie.jsx";
 
-class MovieList extends React {
+class MovieList extends React.Component {
   constructor(props) {
     super(props);
     this.state = { data: [] };
   }
 
   loadMovies() {
-    var url = "/api/movies";
-    const xhr = new XMLHttpRequest();
-    xhr.open("get", this.props.url, false);
-    xhr.onload = () => {
-      const data = JSON.parse(xhr.responseText);
-      this.setState({ data: data });
-    };
-    xhr.send();
+    fetch("http://localhost:5000/api/movies")
+      .then(response => response.json())
+      .then(data => this.setState({ data: data }));
   }
 
   //WARNING! To be deprecated in React v17. Use componentDidMount instead.
