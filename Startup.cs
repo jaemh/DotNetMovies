@@ -27,6 +27,7 @@ namespace Movies
             services.AddMvc();
         }
 
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         // 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, MoviesDbContext moviesDbContext)
@@ -40,14 +41,13 @@ namespace Movies
             //serves assets from wwwroot folder
             app.UseStaticFiles();
             //Generate data if it doesen't already exist.
-            moviesDbContext.CreateSeedData();
+
+            //moviesDbContext.Database.EnsureDeleted();
 
             app.UseMvc();
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+
         }
+
     }
 }

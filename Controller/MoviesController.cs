@@ -16,7 +16,7 @@ namespace Movies.Controllers
 
         public IActionResult GetMovies()
         {
-            return Ok(_context.Movies);
+            return Ok(_context.MovieDetails);
         }
     }
 }

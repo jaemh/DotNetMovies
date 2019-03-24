@@ -13,14 +13,18 @@ class MovieList extends React.Component {
       .then(data => this.setState({ data: data }));
   }
 
-  //WARNING! To be deprecated in React v17. Use componentDidMount instead.
   componentWillMount() {
     this.loadMovies();
   }
 
   render() {
     const movies = this.state.data.map(m => (
-      <Movie key={m.id} movieName={m.name} movieYear={m.year} />
+      <Movie
+        key={m.id}
+        movieName={m.name}
+        movieYear={m.year}
+        movieDesc={m.description}
+      />
     ));
 
     return <div>{movies}</div>;

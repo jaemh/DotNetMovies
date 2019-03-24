@@ -1,10 +1,13 @@
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Movies
+namespace Movies.Model
 {
 
-    public class Movie
+
+    public class MovieDetails
     {
 
         [Key]
@@ -18,10 +21,13 @@ namespace Movies
         [Required]
         public int Year { get; set; }
 
+        public string Description { get; set; }
 
+        public DateTime DateAndTime { get; set; }
+
+        public string Pictures { get; set; }
+
+        public virtual ICollection<BookingTable> bookings { get; set; } //Movie has many bookings
 
     }
-
 }
-
-
